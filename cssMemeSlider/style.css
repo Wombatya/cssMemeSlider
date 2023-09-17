@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/memeSlides-background.jpg);
+}
+
+.meme-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+}
+
+.radio-button {
+    display: none;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.images {
+    width: 100%;
+    height: 35rem;
+    display: flex;
+}
+
+.pic {
+    width: 100%;
+}
+
+.text-buttons-wrapper {
+    display: flex;
+}
+
+.meme-text {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+    width: 50%;
+}
+
+.text {
+    /* opacity: 0; */
+    min-width: 40rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1.3rem;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.button {
+    cursor: pointer;
+    padding: 0.8rem;
+}
+
+.inner-button{
+    display: block;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.1rem solid cornflowerblue;
+    background-color: cornflowerblue
+  }
+  
+  .button:hover{
+    border: 0.1rem solid white;
+    background-color: white;
+  }
+
+.button:hover .inner-button:active{
+    border: 0.1rem solid  slategray;
+    background-color: slategray
+  }
+
+  .button:hover > .inner-button{
+    border: 0.1rem solid white;
+    background-color: white;
+  }
