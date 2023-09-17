@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Meme Slider</title>
+  </head>
+  <body>
+    <div class="meme-container">
+      <input type="radio" name="point" id="slide1" checked />
+      <input type="radio" name="point" id="slide2" />
+      <input type="radio" name="point" id="slide3" />
+      <input type="radio" name="point" id="slide4" />
+
+      <div class="images">
+        <img class="pic meme1" src="img/meme_1.png" alt="" />
+        <img class="pic meme2" src="img/meme_2.jpg" alt="" />
+        <img class="pic meme3" src="img/meme_3.jpg" alt="" />
+        <img class="pic meme4" src="img/meme_4.jpg" alt="" />
+      </div>
+
+      <div class="text-buttons-wrapper">
+
+        <div class="meme-text">
+          <p class="text">То, что вы увидите, называется мемы.</p>
+          <p class="text">Омерзительная восьмерка.</p>
+          <p class="text">Типы вин.</p>
+          <p class="text">Лучшая парковка.</p>
+        </div>
+
+        <div class="buttons">
+            <label class="button" id="slide1-circle" for="slide1"> <div class="inner-button"></div></label>
+            <label class="button" id="slide2-circle" for="slide2"> <div class="inner-button"></div></label>
+            <label class="button" id="slide3-circle" for="slide3"> <div class="inner-button"></div></label>    
+            <label class="button" id="slide4-circle" for="slide4"> <div class="inner-button"></div></label>     
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
