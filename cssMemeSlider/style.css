@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5%;
+    padding: 10%;
 }
 
 .radio-button {
@@ -73,11 +73,6 @@ body {
     border: 0.1rem solid cornflowerblue;
     background-color: cornflowerblue
   }
-  
-  /* .button:hover{
-    border: 0.1rem solid white;
-    background-color: white;
-  } */
 
 .button:hover .inner-button:active{
     border: 0.1rem solid  slategray;
@@ -101,7 +96,13 @@ body {
     animation-fill-mode: forwards;
 }
 
-
+#slide1:checked ~ .content-wrapper .text-buttons-wrapper .buttons #slide1-circle .inner-button,
+#slide2:checked ~ .content-wrapper .text-buttons-wrapper .buttons #slide2-circle .inner-button,
+#slide3:checked ~ .content-wrapper .text-buttons-wrapper .buttons #slide3-circle .inner-button,
+#slide4:checked ~ .content-wrapper .text-buttons-wrapper .buttons #slide4-circle .inner-button
+{
+  background-color: transparent;
+}
 
 
 
