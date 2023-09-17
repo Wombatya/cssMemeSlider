@@ -42,15 +42,16 @@ body {
 
 .meme-text {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     font-family: 'Roboto Mono', monospace;
     font-size: 1.2rem;
     width: 50%;
 }
 
 .text {
-    /* opacity: 0; */
-    min-width: 40rem;
+    opacity: 0;
+    padding: 0.8rem;
 }
 
 .buttons {
@@ -71,12 +72,12 @@ body {
     width: 1.5rem;
     height: 1.5rem;
     border: 0.1rem solid cornflowerblue;
-    background-color: cornflowerblue
+    background-color: cornflowerblue;
   }
 
 .button:hover .inner-button:active{
     border: 0.1rem solid  slategray;
-    background-color: slategray
+    background-color: slategray;
   }
 
   .button:hover > .inner-button{
@@ -104,6 +105,18 @@ body {
   background-color: transparent;
 }
 
+#slide1:checked ~ .content-wrapper .text-buttons-wrapper .meme-text #text1,
+#slide2:checked ~ .content-wrapper .text-buttons-wrapper .meme-text #text2,
+#slide3:checked ~ .content-wrapper .text-buttons-wrapper .meme-text #text3,
+#slide4:checked ~ .content-wrapper .text-buttons-wrapper .meme-text #text4
+{
+  order: -1;
+  animation: text-animation;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
 
 
 @keyframes slide-animation {
@@ -111,6 +124,20 @@ body {
       transform: translateX(100%);
     }
     100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes text-animation {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    70% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 1;
       transform: translateX(0);
     }
   }
