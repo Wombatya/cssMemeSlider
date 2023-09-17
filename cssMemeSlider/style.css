@@ -74,10 +74,10 @@ body {
     background-color: cornflowerblue
   }
   
-  .button:hover{
+  /* .button:hover{
     border: 0.1rem solid white;
     background-color: white;
-  }
+  } */
 
 .button:hover .inner-button:active{
     border: 0.1rem solid  slategray;
@@ -87,4 +87,29 @@ body {
   .button:hover > .inner-button{
     border: 0.1rem solid white;
     background-color: white;
+  }
+
+  #slide1:checked ~ .content-wrapper .images #meme1,
+  #slide2:checked ~ .content-wrapper .images #meme2,
+  #slide3:checked ~ .content-wrapper .images #meme3,
+  #slide4:checked ~ .content-wrapper .images #meme4
+{
+    order: -1;
+    animation: slide-animation;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
+@keyframes slide-animation {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
