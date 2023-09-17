@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Meme Slider</title>
+  </head>
+  <body>
+    <div class="meme-container">
+      <input
+        type="radio"
+        class="radio-button"
+        name="point"
+        id="slide1"
+        checked
+      />
+      <input type="radio" class="radio-button" name="point" id="slide2" />
+      <input type="radio" class="radio-button" name="point" id="slide3" />
+      <input type="radio" class="radio-button" name="point" id="slide4" />
+
+      <div class="content-wrapper">
+        <div class="images">
+          <img class="pic" id="meme1" src="img/meme_1.png" alt="" />
+          <img class="pic" id="meme2" src="img/meme_2.jpg" alt="" />
+          <img class="pic" id="meme3" src="img/meme_3.jpg" alt="" />
+          <img class="pic" id="meme4" src="img/meme_4.jpg" alt="" />
+        </div>
+
+        <div class="text-buttons-wrapper">
+          <div class="meme-text">
+            <p class="text" id="text1">То, что вы увидите, называется мемы.</p>
+            <p class="text" id="text2">Омерзительная восьмерка.</p>
+            <p class="text" id="text3">Выгодный обмен.</p>
+            <p class="text" id="text4">Что может быть лучше окрошки?.</p>
+          </div>
+
+          <div class="buttons">
+            <label class="button" id="slide1-circle" for="slide1">
+              <span class="inner-button"></span
+            ></label>
+            <label class="button" id="slide2-circle" for="slide2">
+              <span class="inner-button"></span
+            ></label>
+            <label class="button" id="slide3-circle" for="slide3">
+              <span class="inner-button"></span
+            ></label>
+            <label class="button" id="slide4-circle" for="slide4">
+              <span class="inner-button"></span
+            ></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
